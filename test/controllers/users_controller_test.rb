@@ -1,8 +1,7 @@
 require 'test_helper'
 
-class TweetTest < ActiveSupport::TestCase
+class UsersControllerTest < ActionController::TestCase
   # test "the truth" do
   #   assert true
   # end
-  belongs_to :user
 end
