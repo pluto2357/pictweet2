@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :users
   get'/tweets'=>'tweets#index'
   root 'tweets#index'
   get '/tweets/new'=>'tweets#new'
   post '/tweets'=>'tweets#create'
 
-  # The priority is based upon order of creation: first created -> highest priority.
+  # The priority is based upon order of creaption: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
