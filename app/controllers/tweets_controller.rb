@@ -33,6 +33,7 @@ tweet.update(tweet_params)
 
   def show 
   @tweet=Tweet.find(params[:id])
+  @comments = @tweet.comments.includs(:user)
   end 
 
 # 編集前のツイートの内容とidを関連ずけ
