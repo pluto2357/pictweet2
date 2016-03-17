@@ -30,6 +30,11 @@ tweet = Tweet.find(params[:id])
 tweet.update(tweet_params)
     end
   end
+
+  def show 
+  @tweet=Tweet.find(params[:id])
+  end 
+
 # 編集前のツイートの内容とidを関連ずけ
 # idで編集するツイート判別　→そのidをupdateアクションに渡す
 

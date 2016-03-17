@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   get 'tweets/:id/edit'=> 'tweets#edit'
   patch 'tweets/:id'=>'tweets#update'
 
+  get 'tweets/:id'=>'tweets#show'
+    
   # The priority is based upon order of creaption: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
