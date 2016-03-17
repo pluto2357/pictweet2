@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   get '/tweets/new'=>'tweets#new'
   post '/tweets'=>'tweets#create'
   get '/users/:id'=>'users#show'
+  delete 'tweets/:id'=>'tweets#destroy'
+  get 'tweets/:id/edit'=> 'tweets#edit'
+  patch 'tweets/:id'=>'tweets#update'
 
   # The priority is based upon order of creaption: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
